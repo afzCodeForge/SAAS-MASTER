@@ -15,7 +15,7 @@ function MessageListItem(props) {
 
   const handleError = useCallback(() => {
     setHasErrorOccurred(true);
-  }, [setHasErrorOccurred]);
+  }, []); // Fixed: removed setHasErrorOccurred from dependencies
 
   return (
     <ListItem divider={divider}>
